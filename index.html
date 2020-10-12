@@ -35,15 +35,18 @@
                         <h2 class="c-card__title">
                             Sign in to your account
                         </h2>
-                        <p class="c-form-field">
+                        <p class="c-form-field js-email-field">
                             <label class="c-label" for="username">
-                                Email address                                
+                                Email address    
+                                <span class="js-email-error-message"></span>                            
                             </label>
+                            
                             <input class="c-input js-email-input" type="email" name="username" id="username" placeholder="e.g. john@doe.com" required>
                         </p>
-                        <p class="c-form-field">
+                        <p class="c-form-field js-password-field">
                             <label class="c-label" for="password">
                                 Password
+                                <span class="js-password-error-message"></span>  
                             </label>
                             <span class="c-password-toggle-container">
                                 <input class="c-input js-password-input" type="password" name="password" id="password" required>

@@ -38,6 +38,7 @@
     --global-color-neutral-xx-dark: #4b4c60;
     --global-color-neutral-xxx-dark: #35374d;
     --global-color-neutral-xxxx-dark: #20223a;
+    --global-color-error: #FF3333;
 
     /* global page settings */
     --global-html-color: var(--global-color-neutral-xxxx-dark);
@@ -71,6 +72,8 @@
     --global-input-focus-borderColor: var(--global-color-alpha);
     --global-input-focus-boxShadowColor: var(--global-color-alpha-x-transparent);
     --global-input-focus-boxShadow: 0 0 0 3px var(--global-input-focus-boxShadowColor);
+    --global-input-error-borderColor: var(--global-color-error);
+
 }
 
 /*------------------------------------*\
@@ -666,7 +669,8 @@ more padding on the right to avoid overlap
 */
 
 .c-label {
-    --label-color: var(--global-color-neutral-xx-dark);
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0;
     padding-bottom: var(--global-whitespace-sm);
     font-size: 14px;
